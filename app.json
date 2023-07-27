@@ -3,6 +3,7 @@
     "name": "proto-expo-app",
     "slug": "proto-expo-app",
     "version": "1.0.0",
+    "scheme": "proto-expo-app",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,6 +25,7 @@
       }
     },
     "web": {
+      "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
