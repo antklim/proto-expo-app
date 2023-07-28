@@ -1,4 +1,4 @@
-import { Stack } from 'expo-router'
+import { Link, Stack } from 'expo-router'
 import { Image, StyleSheet, Text, View } from 'react-native'
 
 // TODO: replace logo with the local file from assets
@@ -22,6 +22,7 @@ const Home = () => {
         }}
       />
       <Text>Open up 'app/index.tsx' to start working on your app!</Text>
+      <Link href={{ pathname: 'details', params: { name: 'Bacon' } }}>Go to Details</Link>
     </View>
   )
 }
