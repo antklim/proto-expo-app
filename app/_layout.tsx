@@ -9,6 +9,8 @@ export { ErrorBoundary } from 'expo-router'
 // }
 
 const RootLayout = () => {
+  const commonStackOptions = {}
+
   return (
     <Stack
       screenOptions={{
@@ -21,7 +23,10 @@ const RootLayout = () => {
         },
         headerTitle: 'My App'
       }}
-    />
+    >
+      <Stack.Screen name="index" options={{ ...commonStackOptions }} />
+      <Stack.Screen name="details" options={{ ...commonStackOptions }} />
+    </Stack>
   )
 }
 

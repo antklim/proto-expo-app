@@ -1,13 +1,12 @@
 import { Link, Stack } from 'expo-router'
 import { Image, StyleSheet, Text, View } from 'react-native'
 
-// TODO: replace logo with the local file from assets
-
 const LogoTitle = () => {
   return (
     <Image
       style={{ width: 30, height: 30 }}
-      source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
+      // source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
+      source={require('../assets/logo.png')}
     />
   )
 }

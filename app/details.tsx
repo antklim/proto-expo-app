@@ -3,13 +3,13 @@ import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 
 const Details = () => {
   const router = useRouter()
-  const params = useLocalSearchParams()
+  const params = useLocalSearchParams<{name: string}>()
 
   return (
     <View style={styles.container}>
       <Stack.Screen
         options={{
-          headerTitle: params.name,
+          headerTitle: `Hi ${params.name}`,
         }}
       />
       <Text
