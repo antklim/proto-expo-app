@@ -1,5 +1,5 @@
-import { Link, Stack } from 'expo-router'
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Link, Stack, router } from 'expo-router'
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 
 const LogoTitle = () => {
   return (
@@ -21,7 +21,15 @@ const Home = () => {
         }}
       />
       <Text>Open up 'app/index.tsx' to start working on your app!</Text>
+
       <Link href={{ pathname: 'details', params: { name: 'Bacon' } }}>Go to Details</Link>
+
+      <Pressable
+        onPress={() => {
+          router.push({ pathname: '/home/messages' })
+        }}>
+        <Text>Open home messages</Text>
+      </Pressable>
     </View>
   )
 }
