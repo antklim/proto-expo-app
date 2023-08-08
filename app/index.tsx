@@ -26,9 +26,16 @@ const Home = () => {
 
       <Pressable
         onPress={() => {
-          router.push({ pathname: '/home/messages' })
+          router.replace({ pathname: '/home/messages' })
         }}>
         <Text>Open home messages</Text>
+      </Pressable>
+
+      <Pressable
+        onPress={() => {
+          router.push({ pathname: '/modal' })
+        }}>
+        <Text>Open modal</Text>
       </Pressable>
     </View>
   )

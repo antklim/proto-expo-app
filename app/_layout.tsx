@@ -26,6 +26,12 @@ const RootLayout = () => {
     >
       <Stack.Screen name="index" options={{ ...commonStackOptions }} />
       <Stack.Screen name="details" options={{ ...commonStackOptions }} />
+      <Stack.Screen name="modal"
+        options={{
+          ...commonStackOptions,
+          presentation: 'modal',
+        }}
+      />
     </Stack>
   )
 }
