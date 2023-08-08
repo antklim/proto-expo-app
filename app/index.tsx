@@ -1,4 +1,4 @@
-import { Link, Stack, router } from 'expo-router'
+import { Link, Stack, useRouter } from 'expo-router'
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 
 const LogoTitle = () => {
@@ -12,6 +12,8 @@ const LogoTitle = () => {
 }
 
 const Home = () => {
+  const router = useRouter()
+
   return (
     <View style={styles.container}>
       <Stack.Screen

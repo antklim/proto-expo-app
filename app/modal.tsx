@@ -1,8 +1,10 @@
-import { Link, router } from 'expo-router'
+import { Link, useRouter } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 import { Pressable, Text, View } from 'react-native'
 
 const Modal = () => {
+  const router = useRouter()
+
   // If the page was reloaded or navigated to directly, then the modal should be presented as a full screen page.
   const isPresented = router.canGoBack();
 
